@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name led)(type Legacy)(uri /home/lemoer/documents/kicad/led.lib)(options "")(descr ""))
+  (lib (name led-rescue)(type Legacy)(uri ${KIPRJMOD}/led-rescue.lib)(options "")(descr ""))
+)

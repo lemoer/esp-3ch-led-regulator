@@ -1,0 +1,1291 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 1050 1150 2    50   ~ 0
+RED
+$Comp
+L led-rescue:R-Device R3
+U 1 1 5F6603D1
+P 2200 1300
+F 0 "R3" V 2407 1300 50  0000 C CNN
+F 1 "Rfs" V 2316 1300 50  0000 C CNN
+F 2 "a:R_0805_2012Metric" V 2130 1300 50  0001 C CNN
+F 3 "~" H 2200 1300 50  0001 C CNN
+	1    2200 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2350 1300 2550 1300
+$Comp
+L led:TPS92511 U2
+U 1 1 5F6603D8
+P 2650 2150
+F 0 "U2" H 1950 1950 50  0000 R CNN
+F 1 "TPS92511" H 2100 1850 50  0000 R CNN
+F 2 "so:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias" H 2600 2000 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps92511.pdf" H 2600 2000 50  0001 C CNN
+	1    2650 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1300 2050 1300
+Wire Wire Line
+	1850 1350 1850 1300
+$Comp
+L led-rescue:GND-power #PWR01
+U 1 1 5F6603E0
+P 1850 1350
+F 0 "#PWR01" H 1850 1100 50  0001 C CNN
+F 1 "GND" H 1855 1177 50  0000 C CNN
+F 2 "" H 1850 1350 50  0001 C CNN
+F 3 "" H 1850 1350 50  0001 C CNN
+	1    1850 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1300 2550 1550
+Wire Wire Line
+	1700 2100 2050 2100
+Wire Wire Line
+	4300 2250 3550 2250
+Wire Wire Line
+	4600 1350 4600 1400
+$Comp
+L led-rescue:D-Device D2
+U 1 1 5F6603EC
+P 4600 1550
+F 0 "D2" V 4554 1630 50  0000 L CNN
+F 1 "SR106" V 4645 1630 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 4600 1550 50  0001 C CNN
+F 3 "~" H 4600 1550 50  0001 C CNN
+	1    4600 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 2100 3250 2100
+Wire Wire Line
+	3550 2250 3550 2100
+Wire Wire Line
+	4300 2550 4300 2250
+$Comp
+L led-rescue:VCC-power #PWR06
+U 1 1 5F6603F6
+P 4600 1350
+F 0 "#PWR06" H 4600 1200 50  0001 C CNN
+F 1 "VCC" H 4615 1523 50  0000 C CNN
+F 2 "" H 4600 1350 50  0001 C CNN
+F 3 "" H 4600 1350 50  0001 C CNN
+	1    4600 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1350 2750 1450
+Wire Wire Line
+	3450 1900 3450 1500
+Wire Wire Line
+	3250 1900 3450 1900
+Wire Wire Line
+	3450 2850 3450 3000
+Wire Wire Line
+	3450 2400 3450 2550
+Wire Wire Line
+	3250 2400 3450 2400
+Wire Wire Line
+	3450 1500 3600 1500
+Wire Wire Line
+	4100 1500 4100 1550
+Wire Wire Line
+	3900 1500 4100 1500
+$Comp
+L led-rescue:VCC-power #PWR03
+U 1 1 5F660410
+P 2750 1350
+F 0 "#PWR03" H 2750 1200 50  0001 C CNN
+F 1 "VCC" H 2765 1523 50  0000 C CNN
+F 2 "" H 2750 1350 50  0001 C CNN
+F 3 "" H 2750 1350 50  0001 C CNN
+	1    2750 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L led-rescue:GND-power #PWR05
+U 1 1 5F660416
+P 4100 1550
+F 0 "#PWR05" H 4100 1300 50  0001 C CNN
+F 1 "GND" H 4105 1377 50  0000 C CNN
+F 2 "" H 4100 1550 50  0001 C CNN
+F 3 "" H 4100 1550 50  0001 C CNN
+	1    4100 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L led-rescue:C-Device C2
+U 1 1 5F66041C
+P 3750 1500
+F 0 "C2" V 3498 1500 50  0000 C CNN
+F 1 "1u" V 3589 1500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3788 1350 50  0001 C CNN
+F 3 "~" H 3750 1500 50  0001 C CNN
+	1    3750 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L led-rescue:GND-power #PWR04
+U 1 1 5F660423
+P 3450 3000
+F 0 "#PWR04" H 3450 2750 50  0001 C CNN
+F 1 "GND" H 3455 2827 50  0000 C CNN
+F 2 "" H 3450 3000 50  0001 C CNN
+F 3 "" H 3450 3000 50  0001 C CNN
+	1    3450 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4500 3250 2    50   Output ~ 0
+LED_RED-
+$Comp
+L led-rescue:INDUCTOR-pspice L2
+U 1 1 5F66042A
+P 4300 2800
+F 0 "L2" H 4300 3015 50  0000 C CNN
+F 1 "470u" H 4300 2924 50  0000 C CNN
+F 2 "Inductor_SMD:L_Bourns_SRR1260" H 4300 2800 50  0001 C CNN
+F 3 "~" H 4300 2800 50  0001 C CNN
+	1    4300 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L led-rescue:R-Device R4
+U 1 1 5F660430
+P 3450 2700
+F 0 "R4" H 3380 2654 50  0000 R CNN
+F 1 "Radj" H 3380 2745 50  0000 R CNN
+F 2 "a:R_0805_2012Metric" V 3380 2700 50  0001 C CNN
+F 3 "~" H 3450 2700 50  0001 C CNN
+	1    3450 2700
+	-1   0    0    1   
+$EndComp
+Text GLabel 4550 4250 2    50   Output ~ 0
+PWM_BLUE
+Text GLabel 4550 4150 2    50   Output ~ 0
+PWM_GREEN
+Text GLabel 4550 4050 2    50   Output ~ 0
+PWM_RED
+Text GLabel 850  7000 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	850  7000 1000 7000
+$Comp
+L led-rescue:GND-power #PWR0104
+U 1 1 5F6FC85B
+P 2300 6700
+F 0 "#PWR0104" H 2300 6450 50  0001 C CNN
+F 1 "GND" H 2305 6527 50  0000 C CNN
+F 2 "" H 2300 6700 50  0001 C CNN
+F 3 "" H 2300 6700 50  0001 C CNN
+	1    2300 6700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 6700 2300 6700
+Text GLabel 1900 6900 2    50   Output ~ 0
+GPIO2
+Wire Wire Line
+	1900 6800 1700 6800
+Text GLabel 1900 6800 2    50   Output ~ 0
+GPIO0
+Wire Wire Line
+	1900 6900 1700 6900
+Wire Wire Line
+	1000 6800 1000 7000
+Connection ~ 1000 7000
+Text GLabel 2650 4050 0    50   Input ~ 0
+GPIO0
+Wire Wire Line
+	4300 2250 4600 2250
+Connection ~ 4300 2250
+Wire Wire Line
+	4300 3050 4300 3250
+Wire Wire Line
+	4300 3250 4500 3250
+Wire Notes Line
+	5100 1000 800  1000
+Wire Notes Line
+	5100 3500 5100 1000
+Wire Notes Line
+	800  3500 5100 3500
+Wire Notes Line
+	800  1000 800  3500
+Wire Notes Line
+	550  6100 550  7200
+Wire Notes Line
+	550  7200 2800 7200
+Wire Notes Line
+	2800 7200 2800 6100
+Wire Notes Line
+	2800 6100 550  6100
+Text Notes 1300 6250 2    50   ~ 0
+ESP01 Connector
+Wire Notes Line
+	800  5950 5350 5950
+Wire Notes Line
+	5350 5950 5350 3750
+Wire Notes Line
+	5350 3750 800  3750
+Wire Notes Line
+	800  3750 800  5950
+Text Notes 850  3900 0    50   ~ 0
+I²C / 12 Bit LED PWM IC
+Text Notes 2950 6250 0    50   ~ 0
+VOLTAGE INPUT
+Wire Notes Line
+	10800 3650 6500 3650
+Wire Notes Line
+	10800 6150 10800 3650
+Wire Notes Line
+	6500 6150 10800 6150
+Wire Notes Line
+	6500 3650 6500 6150
+Connection ~ 10000 4900
+Wire Wire Line
+	10000 4900 10300 4900
+$Comp
+L led-rescue:R-Device R6
+U 1 1 5F806516
+P 9150 5350
+F 0 "R6" H 9080 5304 50  0000 R CNN
+F 1 "Radj" H 9080 5395 50  0000 R CNN
+F 2 "a:R_0805_2012Metric" V 9080 5350 50  0001 C CNN
+F 3 "~" H 9150 5350 50  0001 C CNN
+	1    9150 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L led-rescue:INDUCTOR-pspice L3
+U 1 1 5F806510
+P 10000 5450
+F 0 "L3" H 10000 5665 50  0000 C CNN
+F 1 "470u" H 10000 5574 50  0000 C CNN
+F 2 "Inductor_SMD:L_Bourns_SRR1260" H 10000 5450 50  0001 C CNN
+F 3 "~" H 10000 5450 50  0001 C CNN
+	1    10000 5450
+	0    1    1    0   
+$EndComp
+Text GLabel 10200 5900 2    50   Output ~ 0
+LED_BLUE-
+$Comp
+L led-rescue:GND-power #PWR0116
+U 1 1 5F806509
+P 9150 5650
+F 0 "#PWR0116" H 9150 5400 50  0001 C CNN
+F 1 "GND" H 9155 5477 50  0000 C CNN
+F 2 "" H 9150 5650 50  0001 C CNN
+F 3 "" H 9150 5650 50  0001 C CNN
+	1    9150 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 7400 4750 0    50   Input ~ 0
+PWM_BLUE
+$Comp
+L led-rescue:C-Device C4
+U 1 1 5F806502
+P 9450 4150
+F 0 "C4" V 9198 4150 50  0000 C CNN
+F 1 "1u" V 9289 4150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9488 4000 50  0001 C CNN
+F 3 "~" H 9450 4150 50  0001 C CNN
+	1    9450 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L led-rescue:GND-power #PWR0115
+U 1 1 5F8064FC
+P 9800 4200
+F 0 "#PWR0115" H 9800 3950 50  0001 C CNN
+F 1 "GND" H 9805 4027 50  0000 C CNN
+F 2 "" H 9800 4200 50  0001 C CNN
+F 3 "" H 9800 4200 50  0001 C CNN
+	1    9800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L led-rescue:VCC-power #PWR0114
+U 1 1 5F8064F6
+P 8450 4000
+F 0 "#PWR0114" H 8450 3850 50  0001 C CNN
+F 1 "VCC" H 8465 4173 50  0000 C CNN
+F 2 "" H 8450 4000 50  0001 C CNN
+F 3 "" H 8450 4000 50  0001 C CNN
+	1    8450 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L led-rescue:GND-power #PWR0113
+U 1 1 5F8064F0
+P 8350 5650
+F 0 "#PWR0113" H 8350 5400 50  0001 C CNN
+F 1 "GND" H 8355 5477 50  0000 C CNN
+F 2 "" H 8350 5650 50  0001 C CNN
+F 3 "" H 8350 5650 50  0001 C CNN
+	1    8350 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 5400 8350 5550
+Wire Wire Line
+	8350 5550 8550 5550
+Wire Wire Line
+	8550 5550 8550 5400
+Connection ~ 8350 5550
+Wire Wire Line
+	8350 5550 8350 5650
+Wire Wire Line
+	9600 4150 9800 4150
+Wire Wire Line
+	9800 4150 9800 4200
+Wire Wire Line
+	9150 4150 9300 4150
+Wire Wire Line
+	8950 5050 9150 5050
+Wire Wire Line
+	9150 5050 9150 5200
+Wire Wire Line
+	9150 5500 9150 5650
+Wire Wire Line
+	8950 4550 9150 4550
+Wire Wire Line
+	9150 4550 9150 4150
+Wire Wire Line
+	8450 4000 8450 4050
+$Comp
+L led-rescue:VCC-power #PWR0112
+U 1 1 5F8064DC
+P 10300 3950
+F 0 "#PWR0112" H 10300 3800 50  0001 C CNN
+F 1 "VCC" H 10315 4123 50  0000 C CNN
+F 2 "" H 10300 3950 50  0001 C CNN
+F 3 "" H 10300 3950 50  0001 C CNN
+	1    10300 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 5200 10000 4900
+Wire Wire Line
+	9250 4900 9250 4750
+Wire Wire Line
+	9250 4750 8950 4750
+$Comp
+L led-rescue:D-Device D3
+U 1 1 5F8064D3
+P 10300 4150
+F 0 "D3" V 10254 4230 50  0000 L CNN
+F 1 "SR106" V 10350 4250 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 10300 4150 50  0001 C CNN
+F 3 "~" H 10300 4150 50  0001 C CNN
+	1    10300 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10300 3950 10300 4000
+Wire Wire Line
+	10000 4900 9250 4900
+Wire Wire Line
+	7400 4750 7750 4750
+Wire Wire Line
+	8250 3950 8250 4200
+$Comp
+L led-rescue:GND-power #PWR0111
+U 1 1 5F8064C9
+P 7550 4000
+F 0 "#PWR0111" H 7550 3750 50  0001 C CNN
+F 1 "GND" H 7555 3827 50  0000 C CNN
+F 2 "" H 7550 4000 50  0001 C CNN
+F 3 "" H 7550 4000 50  0001 C CNN
+	1    7550 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4000 7550 3950
+Wire Wire Line
+	7550 3950 7750 3950
+$Comp
+L led:TPS92511 U4
+U 1 1 5F8064C1
+P 8350 4800
+F 0 "U4" H 7650 4600 50  0000 R CNN
+F 1 "TPS92511" H 7800 4500 50  0000 R CNN
+F 2 "so:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias" H 8300 4650 50  0001 C CNN
+F 3 "" H 8300 4650 50  0001 C CNN
+	1    8350 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3950 8250 3950
+$Comp
+L led-rescue:R-Device R2
+U 1 1 5F8064BA
+P 7900 3950
+F 0 "R2" V 8107 3950 50  0000 C CNN
+F 1 "Rfs" V 8016 3950 50  0000 C CNN
+F 2 "a:R_0805_2012Metric" V 7830 3950 50  0001 C CNN
+F 3 "~" H 7900 3950 50  0001 C CNN
+	1    7900 3950
+	0    -1   -1   0   
+$EndComp
+Text Notes 6750 3800 2    50   ~ 0
+BLUE
+Wire Notes Line
+	10800 950  6500 950 
+Wire Notes Line
+	10800 3450 10800 950 
+Wire Notes Line
+	6500 3450 10800 3450
+Wire Notes Line
+	6500 950  6500 3450
+Wire Wire Line
+	10000 3200 10200 3200
+Connection ~ 10000 2200
+Wire Wire Line
+	10300 1900 10300 1750
+Wire Wire Line
+	10000 2200 10300 2200
+$Comp
+L led-rescue:R-Device R5
+U 1 1 5F802EE9
+P 9150 2650
+F 0 "R5" H 9080 2604 50  0000 R CNN
+F 1 "Radj" H 9080 2695 50  0000 R CNN
+F 2 "a:R_0805_2012Metric" V 9080 2650 50  0001 C CNN
+F 3 "~" H 9150 2650 50  0001 C CNN
+	1    9150 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L led-rescue:INDUCTOR-pspice L1
+U 1 1 5F802EE3
+P 10000 2750
+F 0 "L1" H 10000 2965 50  0000 C CNN
+F 1 "470u" H 10000 2874 50  0000 C CNN
+F 2 "Inductor_SMD:L_Bourns_SRR1260" H 10000 2750 50  0001 C CNN
+F 3 "~" H 10000 2750 50  0001 C CNN
+	1    10000 2750
+	0    1    1    0   
+$EndComp
+Text GLabel 10200 3200 2    50   Output ~ 0
+LED_GREEN-
+$Comp
+L led-rescue:GND-power #PWR0110
+U 1 1 5F802EDC
+P 9150 2950
+F 0 "#PWR0110" H 9150 2700 50  0001 C CNN
+F 1 "GND" H 9155 2777 50  0000 C CNN
+F 2 "" H 9150 2950 50  0001 C CNN
+F 3 "" H 9150 2950 50  0001 C CNN
+	1    9150 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 7400 2050 0    50   Input ~ 0
+PWM_GREEN
+$Comp
+L led-rescue:C-Device C3
+U 1 1 5F802ED5
+P 9450 1450
+F 0 "C3" V 9198 1450 50  0000 C CNN
+F 1 "1u" V 9289 1450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9488 1300 50  0001 C CNN
+F 3 "~" H 9450 1450 50  0001 C CNN
+	1    9450 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L led-rescue:GND-power #PWR0109
+U 1 1 5F802ECF
+P 9800 1500
+F 0 "#PWR0109" H 9800 1250 50  0001 C CNN
+F 1 "GND" H 9805 1327 50  0000 C CNN
+F 2 "" H 9800 1500 50  0001 C CNN
+F 3 "" H 9800 1500 50  0001 C CNN
+	1    9800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L led-rescue:VCC-power #PWR0108
+U 1 1 5F802EC9
+P 8450 1300
+F 0 "#PWR0108" H 8450 1150 50  0001 C CNN
+F 1 "VCC" H 8465 1473 50  0000 C CNN
+F 2 "" H 8450 1300 50  0001 C CNN
+F 3 "" H 8450 1300 50  0001 C CNN
+	1    8450 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L led-rescue:GND-power #PWR0107
+U 1 1 5F802EC3
+P 8350 2950
+F 0 "#PWR0107" H 8350 2700 50  0001 C CNN
+F 1 "GND" H 8355 2777 50  0000 C CNN
+F 2 "" H 8350 2950 50  0001 C CNN
+F 3 "" H 8350 2950 50  0001 C CNN
+	1    8350 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2700 8350 2850
+Wire Wire Line
+	8350 2850 8550 2850
+Wire Wire Line
+	8550 2850 8550 2700
+Wire Wire Line
+	9600 1450 9800 1450
+Wire Wire Line
+	9800 1450 9800 1500
+Wire Wire Line
+	9150 1450 9300 1450
+Wire Wire Line
+	8950 2350 9150 2350
+Wire Wire Line
+	9150 2350 9150 2500
+Wire Wire Line
+	9150 2800 9150 2950
+Wire Wire Line
+	8950 1850 9150 1850
+Wire Wire Line
+	9150 1850 9150 1450
+Wire Wire Line
+	8450 1300 8450 1450
+$Comp
+L led-rescue:VCC-power #PWR0106
+U 1 1 5F802EAF
+P 10300 1400
+F 0 "#PWR0106" H 10300 1250 50  0001 C CNN
+F 1 "VCC" H 10315 1573 50  0000 C CNN
+F 2 "" H 10300 1400 50  0001 C CNN
+F 3 "" H 10300 1400 50  0001 C CNN
+	1    10300 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 2500 10000 2200
+Wire Wire Line
+	9250 2200 9250 2050
+Wire Wire Line
+	9250 2050 8950 2050
+$Comp
+L led-rescue:D-Device D1
+U 1 1 5F802EA6
+P 10300 1600
+F 0 "D1" V 10254 1680 50  0000 L CNN
+F 1 "SR106" V 10345 1680 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 10300 1600 50  0001 C CNN
+F 3 "~" H 10300 1600 50  0001 C CNN
+	1    10300 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10300 1400 10300 1450
+Wire Wire Line
+	10000 2200 9250 2200
+Wire Wire Line
+	7400 2050 7750 2050
+Wire Wire Line
+	8250 1250 8250 1500
+$Comp
+L led-rescue:GND-power #PWR0105
+U 1 1 5F802E9C
+P 7550 1300
+F 0 "#PWR0105" H 7550 1050 50  0001 C CNN
+F 1 "GND" H 7555 1127 50  0000 C CNN
+F 2 "" H 7550 1300 50  0001 C CNN
+F 3 "" H 7550 1300 50  0001 C CNN
+	1    7550 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 1300 7550 1250
+Wire Wire Line
+	7550 1250 7750 1250
+Wire Wire Line
+	8050 1250 8250 1250
+$Comp
+L led-rescue:R-Device R1
+U 1 1 5F802E8D
+P 7900 1250
+F 0 "R1" V 8107 1250 50  0000 C CNN
+F 1 "Rfs" V 8016 1250 50  0000 C CNN
+F 2 "a:R_0805_2012Metric" V 7830 1250 50  0001 C CNN
+F 3 "~" H 7900 1250 50  0001 C CNN
+	1    7900 1250
+	0    -1   -1   0   
+$EndComp
+Text Notes 6750 1100 2    50   ~ 0
+GREEN
+$Comp
+L led-rescue:Conn_02x04_Odd_Even-Connector_Generic J1
+U 1 1 5F69B3CF
+P 1500 6800
+F 0 "J1" H 1550 7117 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 1550 7026 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 1500 6800 50  0001 C CNN
+F 3 "~" H 1500 6800 50  0001 C CNN
+	1    1500 6800
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1700 2100 0    50   Input ~ 0
+PWM_RED
+Text GLabel 5950 6800 2    50   Output ~ 0
+3V3
+Wire Notes Line
+	2900 6100 2900 7700
+$Comp
+L led-rescue:GND-power #PWR0117
+U 1 1 5F69F808
+P 5450 7150
+F 0 "#PWR0117" H 5450 6900 50  0001 C CNN
+F 1 "GND" H 5455 6977 50  0000 C CNN
+F 2 "" H 5450 7150 50  0001 C CNN
+F 3 "" H 5450 7150 50  0001 C CNN
+	1    5450 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L led-rescue:Conn_01x04_Female-Connector J2
+U 1 1 5F6B6AD4
+P 2000 7450
+F 0 "J2" H 2028 7426 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 2028 7335 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 2000 7450 50  0001 C CNN
+F 3 "~" H 2000 7450 50  0001 C CNN
+	1    2000 7450
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	550  7250 550  7750
+Wire Notes Line
+	550  7750 2800 7750
+Wire Notes Line
+	2800 7750 2800 7250
+Wire Notes Line
+	2800 7250 550  7250
+Text Notes 600  7350 0    50   ~ 0
+LED Connector
+Text GLabel 1650 7450 0    50   Input ~ 0
+LED_GREEN-
+Text GLabel 1650 7550 0    50   Input ~ 0
+LED_BLUE-
+Text GLabel 1650 7350 0    50   Input ~ 0
+LED_RED-
+Wire Wire Line
+	1650 7350 1800 7350
+Wire Wire Line
+	1650 7450 1800 7450
+Wire Wire Line
+	1650 7550 1800 7550
+$Comp
+L led-rescue:Screw_Terminal_01x02-Connector J3
+U 1 1 5F5CBD6F
+P 3400 6900
+F 0 "J3" H 3480 6892 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 3480 6801 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 3400 6900 50  0001 C CNN
+F 3 "~" H 3400 6900 50  0001 C CNN
+	1    3400 6900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L led-rescue:GND-power #PWR0120
+U 1 1 5F5CC686
+P 3700 7300
+F 0 "#PWR0120" H 3700 7050 50  0001 C CNN
+F 1 "GND" H 3705 7127 50  0000 C CNN
+F 2 "" H 3700 7300 50  0001 C CNN
+F 3 "" H 3700 7300 50  0001 C CNN
+	1    3700 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L led-rescue:VCC-power #PWR0119
+U 1 1 5F669FD2
+P 850 7600
+F 0 "#PWR0119" H 850 7450 50  0001 C CNN
+F 1 "VCC" H 865 7773 50  0000 C CNN
+F 2 "" H 850 7600 50  0001 C CNN
+F 3 "" H 850 7600 50  0001 C CNN
+	1    850  7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  7600 850  7650
+Wire Wire Line
+	850  7650 1800 7650
+$Comp
+L led-rescue:C-Device C1
+U 1 1 5F5F1C02
+P 3000 1450
+F 0 "C1" V 2748 1450 50  0000 C CNN
+F 1 "2.2u" V 2839 1450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3038 1300 50  0001 C CNN
+F 3 "~" H 3000 1450 50  0001 C CNN
+	1    3000 1450
+	0    1    1    0   
+$EndComp
+Connection ~ 2750 1450
+Wire Wire Line
+	2750 1450 2750 1550
+Wire Wire Line
+	2750 1450 2850 1450
+$Comp
+L led-rescue:GND-power #PWR0122
+U 1 1 5F5F678D
+P 3150 1500
+F 0 "#PWR0122" H 3150 1250 50  0001 C CNN
+F 1 "GND" H 3155 1327 50  0000 C CNN
+F 2 "" H 3150 1500 50  0001 C CNN
+F 3 "" H 3150 1500 50  0001 C CNN
+	1    3150 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1450 3150 1500
+$Comp
+L led-rescue:C-Device C5
+U 1 1 5F5FF199
+P 4050 3250
+F 0 "C5" V 3798 3250 50  0000 C CNN
+F 1 "1u" V 3889 3250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4088 3100 50  0001 C CNN
+F 3 "~" H 4050 3250 50  0001 C CNN
+	1    4050 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L led-rescue:VCC-power #PWR0123
+U 1 1 5F5FF9DB
+P 3900 2950
+F 0 "#PWR0123" H 3900 2800 50  0001 C CNN
+F 1 "VCC" H 3915 3123 50  0000 C CNN
+F 2 "" H 3900 2950 50  0001 C CNN
+F 3 "" H 3900 2950 50  0001 C CNN
+	1    3900 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2950 3900 3250
+Wire Wire Line
+	4200 3250 4300 3250
+Connection ~ 4300 3250
+$Comp
+L led-rescue:C-Device C7
+U 1 1 5F609D18
+P 8700 1450
+F 0 "C7" V 8448 1450 50  0000 C CNN
+F 1 "2.2u" V 8539 1450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8738 1300 50  0001 C CNN
+F 3 "~" H 8700 1450 50  0001 C CNN
+	1    8700 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L led-rescue:GND-power #PWR0124
+U 1 1 5F60B55C
+P 8900 1500
+F 0 "#PWR0124" H 8900 1250 50  0001 C CNN
+F 1 "GND" H 8905 1327 50  0000 C CNN
+F 2 "" H 8900 1500 50  0001 C CNN
+F 3 "" H 8900 1500 50  0001 C CNN
+	1    8900 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 1450 8900 1450
+Wire Wire Line
+	8900 1450 8900 1500
+Wire Wire Line
+	8550 1450 8450 1450
+Connection ~ 8450 1450
+Wire Wire Line
+	8450 1450 8450 1500
+$Comp
+L led-rescue:VCC-power #PWR0125
+U 1 1 5F627C1A
+P 9550 2900
+F 0 "#PWR0125" H 9550 2750 50  0001 C CNN
+F 1 "VCC" H 9565 3073 50  0000 C CNN
+F 2 "" H 9550 2900 50  0001 C CNN
+F 3 "" H 9550 2900 50  0001 C CNN
+	1    9550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L led-rescue:C-Device C6
+U 1 1 5F642135
+P 8650 4050
+F 0 "C6" V 8398 4050 50  0000 C CNN
+F 1 "2.2u" V 8489 4050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8688 3900 50  0001 C CNN
+F 3 "~" H 8650 4050 50  0001 C CNN
+	1    8650 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 4050 8500 4050
+Connection ~ 8450 4050
+Wire Wire Line
+	8450 4050 8450 4200
+$Comp
+L led-rescue:GND-power #PWR0126
+U 1 1 5F6471DC
+P 8850 4100
+F 0 "#PWR0126" H 8850 3850 50  0001 C CNN
+F 1 "GND" H 8855 3927 50  0000 C CNN
+F 2 "" H 8850 4100 50  0001 C CNN
+F 3 "" H 8850 4100 50  0001 C CNN
+	1    8850 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 4050 8850 4050
+Wire Wire Line
+	8850 4050 8850 4100
+Connection ~ 10000 3200
+Wire Wire Line
+	10000 3000 10000 3200
+Wire Wire Line
+	9850 3200 10000 3200
+Wire Wire Line
+	9550 2900 9550 3200
+$Comp
+L led-rescue:C-Device C8
+U 1 1 5F627C14
+P 9700 3200
+F 0 "C8" V 9448 3200 50  0000 C CNN
+F 1 "1u" V 9539 3200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9738 3050 50  0001 C CNN
+F 3 "~" H 9700 3200 50  0001 C CNN
+	1    9700 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L led-rescue:VCC-power #PWR0127
+U 1 1 5F667901
+P 9650 5600
+F 0 "#PWR0127" H 9650 5450 50  0001 C CNN
+F 1 "VCC" H 9665 5773 50  0000 C CNN
+F 2 "" H 9650 5600 50  0001 C CNN
+F 3 "" H 9650 5600 50  0001 C CNN
+	1    9650 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 5600 9650 5900
+$Comp
+L led-rescue:C-Device C9
+U 1 1 5F667909
+P 9800 5900
+F 0 "C9" V 9548 5900 50  0000 C CNN
+F 1 "1u" V 9639 5900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9838 5750 50  0001 C CNN
+F 3 "~" H 9800 5900 50  0001 C CNN
+	1    9800 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9950 5900 10000 5900
+Wire Wire Line
+	10000 5700 10000 5900
+Connection ~ 10000 5900
+Wire Wire Line
+	10000 5900 10200 5900
+$Comp
+L led-rescue:PCA9685PW-Driver_LED U5
+U 1 1 5F6642C9
+P 3650 4750
+F 0 "U5" H 3650 5931 50  0000 C CNN
+F 1 "PCA9685PW" H 3650 5840 50  0000 C CNN
+F 2 "Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm" H 3675 3775 50  0001 L CNN
+F 3 "http://www.nxp.com/documents/data_sheet/PCA9685.pdf" H 3250 5450 50  0001 C CNN
+	1    3650 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 2650 4150 0    50   Input ~ 0
+GPIO2
+$Comp
+L led-rescue:GND-power #PWR0101
+U 1 1 5F696D01
+P 3950 5700
+F 0 "#PWR0101" H 3950 5450 50  0001 C CNN
+F 1 "GND" H 3955 5527 50  0000 C CNN
+F 2 "" H 3950 5700 50  0001 C CNN
+F 3 "" H 3950 5700 50  0001 C CNN
+	1    3950 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 5850 3750 5850
+Wire Wire Line
+	3650 3750 3750 3750
+Wire Wire Line
+	3750 3750 3750 3850
+Wire Wire Line
+	3750 3850 3850 3850
+Wire Wire Line
+	4350 4050 4550 4050
+Wire Wire Line
+	4350 4250 4550 4250
+Wire Wire Line
+	4350 4150 4550 4150
+Text GLabel 3850 3850 2    50   Input ~ 0
+3V3
+$Comp
+L led-rescue:GND-power #PWR0102
+U 1 1 5F6CF15C
+P 2800 4450
+F 0 "#PWR0102" H 2800 4200 50  0001 C CNN
+F 1 "GND" H 2805 4277 50  0000 C CNN
+F 2 "" H 2800 4450 50  0001 C CNN
+F 3 "" H 2800 4450 50  0001 C CNN
+	1    2800 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4450 2800 4350
+Wire Wire Line
+	2800 4250 2950 4250
+Wire Wire Line
+	2950 4350 2800 4350
+Connection ~ 2800 4350
+Wire Wire Line
+	2800 4350 2800 4250
+Wire Wire Line
+	2950 4150 2650 4150
+Wire Wire Line
+	2650 4050 2950 4050
+Wire Wire Line
+	3750 5700 3950 5700
+Wire Wire Line
+	3750 5700 3750 5850
+$Comp
+L led-rescue:GND-power #PWR0103
+U 1 1 5F6F696A
+P 2750 5550
+F 0 "#PWR0103" H 2750 5300 50  0001 C CNN
+F 1 "GND" H 2755 5377 50  0000 C CNN
+F 2 "" H 2750 5550 50  0001 C CNN
+F 3 "" H 2750 5550 50  0001 C CNN
+	1    2750 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4950 2750 4950
+Wire Wire Line
+	2750 4950 2750 5050
+Wire Wire Line
+	2950 5050 2750 5050
+Connection ~ 2750 5050
+Wire Wire Line
+	2750 5050 2750 5150
+Wire Wire Line
+	2950 5150 2750 5150
+Connection ~ 2750 5150
+Wire Wire Line
+	2750 5150 2750 5250
+Wire Wire Line
+	2950 5250 2750 5250
+Connection ~ 2750 5250
+Wire Wire Line
+	2750 5250 2750 5350
+Wire Wire Line
+	2950 5350 2750 5350
+Connection ~ 2750 5350
+Wire Wire Line
+	2750 5350 2750 5450
+Wire Wire Line
+	2950 5450 2750 5450
+Connection ~ 2750 5450
+Wire Wire Line
+	2750 5450 2750 5550
+$Comp
+L led-rescue:Ferrite_Bead-Device FB3
+U 1 1 5F71D759
+P 10300 4700
+F 0 "FB3" H 10437 4746 50  0000 L CNN
+F 1 "SMB/002" H 10437 4655 50  0000 L CNN
+F 2 "own:smb002" V 10230 4700 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B400/SMDBEADS.pdf" H 10300 4700 50  0001 C CNN
+	1    10300 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 4850 10300 4900
+Wire Wire Line
+	10300 4300 10300 4550
+$Comp
+L led-rescue:Ferrite_Bead-Device FB2
+U 1 1 5F7413C1
+P 10300 2050
+F 0 "FB2" H 10437 2096 50  0000 L CNN
+F 1 "SMB/002" H 10437 2005 50  0000 L CNN
+F 2 "own:smb002" V 10230 2050 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B400/SMDBEADS.pdf" H 10300 2050 50  0001 C CNN
+	1    10300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L led-rescue:Ferrite_Bead-Device FB1
+U 1 1 5F7512E9
+P 4600 2100
+F 0 "FB1" H 4737 2146 50  0000 L CNN
+F 1 "SMB/002" H 4737 2055 50  0000 L CNN
+F 2 "own:smb002" V 4530 2100 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B400/SMDBEADS.pdf" H 4600 2100 50  0001 C CNN
+	1    4600 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1700 4600 1950
+NoConn ~ 4350 4350
+NoConn ~ 4350 4450
+NoConn ~ 4350 4550
+NoConn ~ 4350 4650
+NoConn ~ 4350 4750
+NoConn ~ 4350 4850
+NoConn ~ 4350 4950
+NoConn ~ 4350 5050
+NoConn ~ 4350 5150
+NoConn ~ 4350 5250
+NoConn ~ 4350 5350
+NoConn ~ 4350 5450
+NoConn ~ 4350 5550
+$Comp
+L led:TPS92511 U3
+U 1 1 5F802E94
+P 8350 2100
+F 0 "U3" H 7650 1900 50  0000 R CNN
+F 1 "TPS92511" H 7800 1800 50  0000 R CNN
+F 2 "so:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias" H 8300 1950 50  0001 C CNN
+F 3 "" H 8300 1950 50  0001 C CNN
+	1    8350 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L led-rescue:L-Device L4
+U 1 1 5F65FC0F
+P 4400 6800
+F 0 "L4" V 4219 6800 50  0000 C CNN
+F 1 "10u" V 4310 6800 50  0000 C CNN
+F 2 "own:1212fps" H 4400 6800 50  0001 C CNN
+F 3 "https://cdn-reichelt.de/documents/datenblatt/B400/DS_1212FPS.pdf" H 4400 6800 50  0001 C CNN
+	1    4400 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L led-rescue:C-Device C11
+U 1 1 5F66C1E2
+P 4700 7050
+F 0 "C11" V 4448 7050 50  0000 C CNN
+F 1 "2.2u" V 4539 7050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4738 6900 50  0001 C CNN
+F 3 "~" H 4700 7050 50  0001 C CNN
+	1    4700 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L led-rescue:C-Device C10
+U 1 1 5F679AEF
+P 4050 7050
+F 0 "C10" V 3798 7050 50  0000 C CNN
+F 1 "2.2u" V 3889 7050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4088 6900 50  0001 C CNN
+F 3 "~" H 4050 7050 50  0001 C CNN
+	1    4050 7050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 7300 3700 7000
+Wire Wire Line
+	3700 7000 3600 7000
+Text GLabel 4500 6250 2    50   Output ~ 0
+VCC_UNFILTERED
+Wire Wire Line
+	3600 6900 3700 6900
+Wire Wire Line
+	3700 6900 3700 6800
+$Comp
+L led-rescue:GND-power #PWR0118
+U 1 1 5F6CE2C5
+P 4050 7300
+F 0 "#PWR0118" H 4050 7050 50  0001 C CNN
+F 1 "GND" H 4055 7127 50  0000 C CNN
+F 2 "" H 4050 7300 50  0001 C CNN
+F 3 "" H 4050 7300 50  0001 C CNN
+	1    4050 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6800 4050 6900
+Wire Wire Line
+	3700 6800 4050 6800
+Connection ~ 4050 6800
+Wire Wire Line
+	4050 6800 4250 6800
+Wire Wire Line
+	4550 6800 4700 6800
+Wire Wire Line
+	4700 6800 4700 6900
+$Comp
+L led-rescue:GND-power #PWR0121
+U 1 1 5F6E4A60
+P 4700 7300
+F 0 "#PWR0121" H 4700 7050 50  0001 C CNN
+F 1 "GND" H 4705 7127 50  0000 C CNN
+F 2 "" H 4700 7300 50  0001 C CNN
+F 3 "" H 4700 7300 50  0001 C CNN
+	1    4700 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 7200 4050 7300
+Wire Wire Line
+	4700 7200 4700 7300
+Wire Wire Line
+	3700 6450 4300 6450
+Wire Wire Line
+	4500 6250 4300 6250
+Wire Wire Line
+	4300 6250 4300 6450
+Connection ~ 4300 6450
+Wire Wire Line
+	4300 6450 5050 6450
+Wire Notes Line
+	6200 7700 6200 6100
+Wire Notes Line
+	2900 7700 6200 7700
+Wire Notes Line
+	2900 6100 6200 6100
+$Comp
+L led-rescue:VCC-power #PWR0128
+U 1 1 5F733678
+P 4700 6750
+F 0 "#PWR0128" H 4700 6600 50  0001 C CNN
+F 1 "VCC" H 4715 6923 50  0000 C CNN
+F 2 "" H 4700 6750 50  0001 C CNN
+F 3 "" H 4700 6750 50  0001 C CNN
+	1    4700 6750
+	1    0    0    -1  
+$EndComp
+Connection ~ 3700 6800
+Wire Wire Line
+	5450 7100 5450 7150
+Wire Wire Line
+	3700 6450 3700 6800
+Wire Wire Line
+	5050 6450 5050 6800
+Wire Wire Line
+	4700 6750 4700 6800
+Connection ~ 4700 6800
+Wire Wire Line
+	5850 6800 5950 6800
+$Comp
+L led-rescue:TSR_1-2433-Regulator_Switching U1
+U 1 1 5F6804CB
+P 5450 6900
+F 0 "U1" H 5450 7267 50  0000 C CNN
+F 1 "TSR_0.5-2433" H 5450 7176 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_TRACO_TSR-1_THT" H 5450 6750 50  0001 L CIN
+F 3 "http://www.tracopower.com/products/tsr1.pdf" H 5450 6900 50  0001 C CNN
+	1    5450 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2700 8150 2850
+Wire Wire Line
+	8150 2850 8350 2850
+Connection ~ 8350 2850
+Wire Wire Line
+	8350 2950 8350 2850
+Wire Wire Line
+	8350 5550 8150 5550
+Wire Wire Line
+	8150 5550 8150 5400
+$Comp
+L led-rescue:GND-power #PWR0129
+U 1 1 5F825D20
+P 2650 3000
+F 0 "#PWR0129" H 2650 2750 50  0001 C CNN
+F 1 "GND" H 2655 2827 50  0000 C CNN
+F 2 "" H 2650 3000 50  0001 C CNN
+F 3 "" H 2650 3000 50  0001 C CNN
+	1    2650 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2750 2650 2900
+Wire Wire Line
+	2650 2900 2850 2900
+Wire Wire Line
+	2850 2900 2850 2750
+Connection ~ 2650 2900
+Wire Wire Line
+	2650 2900 2650 3000
+Wire Wire Line
+	2650 2900 2450 2900
+Wire Wire Line
+	2450 2900 2450 2750
+NoConn ~ 1200 6900
+NoConn ~ 1700 7000
+Wire Wire Line
+	1000 6800 1200 6800
+Wire Wire Line
+	1000 7000 1200 7000
+$Comp
+L Connector:Conn_01x03_Male J4
+U 1 1 5F670879
+P 2550 6450
+F 0 "J4" H 2658 6731 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 2658 6640 50  0000 C CNN
+F 2 "pin:PinHeader_1x03_P2.54mm_Vertical" H 2550 6450 50  0001 C CNN
+F 3 "~" H 2550 6450 50  0001 C CNN
+	1    2550 6450
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1900 7000 2    50   Input ~ 0
+RX
+Wire Wire Line
+	1900 7000 1700 7000
+Text GLabel 1000 6700 0    50   Output ~ 0
+TX
+Wire Wire Line
+	1200 6700 1000 6700
+Text GLabel 2150 6350 0    50   Input ~ 0
+TX
+Wire Wire Line
+	2150 6550 2350 6550
+Text GLabel 2150 6450 0    50   Output ~ 0
+RX
+Wire Wire Line
+	2150 6450 2350 6450
+$Comp
+L led-rescue:GND-power #PWR0130
+U 1 1 5F6B4A3A
+P 2150 6550
+F 0 "#PWR0130" H 2150 6300 50  0001 C CNN
+F 1 "GND" H 2000 6500 50  0000 C CNN
+F 2 "" H 2150 6550 50  0001 C CNN
+F 3 "" H 2150 6550 50  0001 C CNN
+	1    2150 6550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6350 2350 6350
+$EndSCHEMATC
